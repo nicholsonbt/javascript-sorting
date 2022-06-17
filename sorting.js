@@ -1,4 +1,6 @@
-const insertionSort = (array) => {
+var SORT = {};
+
+SORT.InsertionSort = function(array) {
 	let insert = function(array, rightIndex, value) {
 		// Search for the first (from the right of index i) index (j) such that the value at j is less than 'value'.
 		// Increment the index of all values between i and j.
@@ -19,5 +21,3 @@ const insertionSort = (array) => {
 	// Return the sorted array.
 	return array;
 }
-
-export {insertionSort};
